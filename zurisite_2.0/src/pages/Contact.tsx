@@ -1,5 +1,4 @@
 //import LandingDrag from '../components/LandingDrag';
-import Footer from  '../components/Footer';
 import type { JSX } from 'react';
 
 const Contact = (): JSX.Element => {
@@ -27,11 +26,12 @@ const Contact = (): JSX.Element => {
                 </p>
             </div>
         <br/>
-            <Footer/>
+            <footer>
                 email me for important stuff
                     <br/>
                 <address>@zurimckee95@gmail.com</address>
-            </h1>
+            </footer>
+        </h1>
     )
 };
 

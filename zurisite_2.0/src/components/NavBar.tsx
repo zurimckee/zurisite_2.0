@@ -1,16 +1,50 @@
-
-function NavBar(){
+import {NavLink} from 'react-router-dom';
+import type { JSX } from 'react';
+function NavBar() : JSX.Element {
     return (
         <nav>
-            <ul>
-                <li><a href="/">landing</a></li>
-                <li><a href="/about">about</a></li>
-                <li><a href="/contact">hmu</a></li>
-                <li><a href="/projects">projects</a></li>
-                <li><a href="./log.html">site log</a></li>
-                <li><a href="/art">art</a></li>
-                <li><a href="/michal">miscellaneous</a></li>
-            </ul>
+            <NavLink
+                to="/Landing"
+                className = {
+                    ({isActive}) => (isActive ? 'active' : undefined)}>
+                home
+            </NavLink>
+            <NavLink
+                to="/About"
+                className = {
+                    ({isActive}) => (isActive ? 'active' : undefined)}>
+                about
+            </NavLink>
+            <NavLink
+                to="/Contact"
+                className = {
+                    ({isActive}) => (isActive ? 'active' : undefined)}>
+                hmu
+            </NavLink>
+            <NavLink
+                to="/Projects"
+                className = {
+                    ({isActive}) => (isActive ? 'active' : undefined)}>
+                projects
+            </NavLink>
+            <NavLink
+                to="/Blog"
+                className = {
+                    ({isActive}) => (isActive ? 'active' : undefined)}>
+                site log
+            </NavLink>
+            <NavLink
+                to="/Art"
+                className = {
+                    ({isActive}) => (isActive ? 'active' : undefined)}>
+                art
+            </NavLink>
+            <NavLink
+                to="/Random"
+                className = {
+                    ({isActive}) => (isActive ? 'active' : undefined)}>
+                random
+            </NavLink>
         </nav>
     )
 }

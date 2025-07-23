@@ -1,14 +1,13 @@
-import LandingDrag from '../components/LandingDrag';
+//import LandingDrag from '../components/LandingDrag';
 import Footer from  '../components/Footer';
 import type { JSX } from 'react';
 
 const Contact = (): JSX.Element => {
     return(
-        <LandingDrag>
-            <h1 className="blog-h1"> 
-                hit me up!
-                <hr/>
-                <div className="contact-container">
+         <h1 className="blog-h1"> 
+            hit me up!
+            <hr/>
+            <div className="contact-container">
                 <p>
                     <a href="https://github.com/zurimckee" target="_blank">
                         <i className="fa-brands fa-github"></i> 
@@ -27,13 +26,12 @@ const Contact = (): JSX.Element => {
                     </a>
                 </p>
             </div>
-            <br/>
+        <br/>
             <Footer/>
                 email me for important stuff
                     <br/>
                 <address>@zurimckee95@gmail.com</address>
             </h1>
-        </LandingDrag>
     )
 };
 

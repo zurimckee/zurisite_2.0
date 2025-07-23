@@ -1,13 +1,11 @@
 import type { JSX } from 'react';
-import LandingDrag from '../components/LandingDrag';
+//import LandingDrag from '../components/LandingDrag';
 
 
 
 const Projects = (): JSX.Element => {
     return(
-        <LandingDrag>
-            <p className="section__text__p1"> check out my </p>
-            <h1 className="title"> projects</h1>
+        <h1> projects
             <div className="experience-details-container">
                 <div className="about-containers">
                     <div className="details-container color-container">
@@ -67,8 +65,11 @@ const Projects = (): JSX.Element => {
                         </div>
                     </div>
                 </div>
+                <div>
+                    <p> put a button that links to github to see more projects here<br/> also change the colors of everythinggg omg</p>
+                </div>
             </div>
-        </LandingDrag>
+        </h1>
     )
 };
 export default Projects;

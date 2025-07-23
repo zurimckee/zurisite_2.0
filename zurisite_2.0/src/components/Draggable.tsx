@@ -17,9 +17,9 @@ class MyFirstGrid extends React.Component {
         rowHeight={30}
         width={1200}
       >
-        <div key="a" className="draggable">hi!!</div>
-        <div key="b" className="draggable">this is my 2nd and a half website i didn't like my 2nd one it was boring</div>
-        <div key="c" className="draggable">i'm zuri</div>
+        <div key="a" className="draggable"></div>
+        <div key="b" className="draggable"></div>
+        <div key="c" className="draggable"></div>
       </GridLayout>
     );
   }
